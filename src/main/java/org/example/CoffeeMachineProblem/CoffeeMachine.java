@@ -26,29 +26,38 @@ public class CoffeeMachine {
         if(num>=1 && num<=6) {
             switch (num) {
                 case 1:
-                    System.out.println("Your <Coffee> is Ready");
+                    selectedItems("Coffee");
                     break;
                 case 2:
-                    System.out.println("Your <Tea> is Ready");
+                    selectedItems("Tea");
                     break;
                 case 3:
-                    System.out.println("Your <Milk> is Ready");
+                    selectedItems("Milk");
                     break;
                 case 4:
-                    System.out.println("Your <Hot Water> is Ready");
+                    selectedItems("Hot Water");
                     break;
                 case 5:
-                    System.out.println("Your <Lemon Tea> is Ready");
+                    selectedItems("Lemon Tea");
                     break;
                 case 6:
                     System.out.println("Thank you for using this Machine, Good Bye");
                     break;
             }
         }else{
-            displayItems();
+
             System.out.println("Invalid Choice. Please select valid option from list.");
+            displayItems();
+            userselecteddata();
 
         }
+
+
+    }
+
+    public static void selectedItems(String itemSelected){
+        System.out.println("You selected <"+itemSelected+"> from the list");
+        System.out.println("Your <"+itemSelected+"> is Ready");
 
 
     }

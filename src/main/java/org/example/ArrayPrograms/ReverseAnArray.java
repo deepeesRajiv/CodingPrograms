@@ -23,12 +23,20 @@ public class ReverseAnArray {
         for(int gss:arr){
             System.out.print(gss+" "  );
         }
-     int last = arr.length;
-        System.out.println(last);
-        int[] art = new int[N];
-        for(int i=last;i>0;i--){
-            //art= arr[i];
+
+
+        int[] reversedarray = new int[N];
+        for(int i=0;i<arr.length;i++){
+        reversedarray[N-1] =arr[i];
+        N=N-1;
         }
+
+        System.out.println("The reverse array is : ");
+        for(int rev:reversedarray){
+            System.out.print(rev + " ");
+        }
+
+
 
     }
 
