@@ -16,14 +16,17 @@ public class Normal2dArray {
     public void returnum() {
        // Scanner sc = new Scanner(System.in);
 
-        int[][] a2darr = {
-                {1,2,3,4},
-                {5,6,7,8},
-                {8,9,1,2},
-                {9,8,7,6}
+        int[][] a2darr = {{1,2,3,4}, {5,6,7,8}, {8,9,1,2}, {9,8,7,6}
         };
 
-        for(int i=0;i<a2darr.length;i++){
+
+        int[][] art2d = {{1,2}, {2,3}};
+
+
+        System.out.println(art2d.length);//rows
+        System.out.println(art2d[0].length);
+
+        for(int i=0;i<a2darr.length;i++){//4//4
             for (int j=0;j<a2darr[i].length;j++){
                 System.out.print(a2darr[i][j]);
             }

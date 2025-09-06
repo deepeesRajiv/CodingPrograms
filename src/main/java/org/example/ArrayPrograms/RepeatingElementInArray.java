@@ -2,10 +2,10 @@ package org.example.ArrayPrograms;
 
 import java.util.Scanner;
 
-public class SecondSmallestSecondLargest {
+public class RepeatingElementInArray {
 
     public static void main(String[] args) {
-        SecondSmallestSecondLargest sum = new SecondSmallestSecondLargest();
+        RepeatingElementInArray sum = new RepeatingElementInArray();
         sum.returnum();
 
     }
@@ -18,18 +18,20 @@ public class SecondSmallestSecondLargest {
         for (int i = 0; i < N; i++) {
             arr[i] = sc.nextInt();
         }
-        int smalletnum=arr[0];
 
+       // int[] art = new int[10];
         for(int i=0;i<N;i++){
-            if(arr[i]<smalletnum){
+            for(int j=i+1;j<N;j++){
+                if(arr[i]==arr[j]) {
+                    System.out.print("The repeating elements are: "+arr[j]);
 
-                smalletnum=arr[i];
+                }
             }
-        }
-        System.out.println(smalletnum);
 
+        }
 
     }
 
 
-}
+
+    }

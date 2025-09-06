@@ -19,13 +19,13 @@ public class PrimaryDiagonalElements {
                 {1, 1, 1, 33}
         };
 
-        int sum = 0;
+
         for (int i = 0; i < a2darr.length; i++) {
             for (int j = 0; j < a2darr[i].length; j++) {
                 if(a2darr[i]==a2darr[j]){
                     System.out.println(a2darr[i][j]);
                 }
-
+//better way to solve this
             }
         }
     }

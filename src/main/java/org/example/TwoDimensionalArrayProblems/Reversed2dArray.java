@@ -1,31 +1,35 @@
-//package org.example.TwoDimensionalArrayProblems;
-//
-//import java.sql.SQLOutput;
-//import java.util.Arrays;
-//import java.util.Scanner;
-//
-//
-//
-//public class Reversed2dArray {
-//
-//    public static void main(String[] args) {
-//        Reversed2dArray sum = new Reversed2dArray();
-//        sum.returnum();
-//
-//    }
-//
-////    public void returnum() {
-////        Scanner sc = new Scanner(System.in);
-////
-////        int rows = sc.nextInt();
-////        int cols = sc.nextInt();
-////
-////        int[][] a2darr = new int[rows][cols];
-////        for (int i = 0; i < rows; i++) {
-////            for (int j = 0; j < cols; j++) {
-////                a2darr[i][j] = sc.nextInt();
-////            }
-////        }
+package org.example.TwoDimensionalArrayProblems;
+
+import java.sql.SQLOutput;
+import java.util.Arrays;
+import java.util.Scanner;
+
+
+
+public class Reversed2dArray {
+
+    public static void main(String[] args) {
+        Reversed2dArray sum = new Reversed2dArray();
+        sum.returnum();
+
+    }
+
+    public void returnum() {
+        Scanner sc = new Scanner(System.in);
+
+        int rows = sc.nextInt();
+        int cols = sc.nextInt();
+
+        int[][] a2darr = new int[rows][cols];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                a2darr[i][j] = sc.nextInt();
+            }
+        }
+
+
+    }
+}
 //
 //       // System.out.println(Arrays.deepToString(a2darr));
 ////        int[][] a2darr = {
